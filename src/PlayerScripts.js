@@ -24,7 +24,8 @@ window.ReactNativeWebView.postMessage(JSON.stringify({eventType: 'getAvailablePl
 true;
 `,
   seekToScript: (seconds, allowSeekAhead) => `
-player.seekTo(${seconds}, ${allowSeekAhead})
+player.seekTo(${seconds}, ${allowSeekAhead});
+true;
 `,
   playVideo: 'player.playVideo(); true;',
   pauseVideo: 'player.pauseVideo(); true;',
